@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="ezApp">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+	<title>ionic.js : 手势支持</title>
+	<script src="../js/ionic.bundle.js"></script>
+	<script src="1-04ionicjs-shoushizhichi.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/ionic.css">
+	<style>
+		.icon{
+			font-size:60px;
+		}
+	</style>
+</head>
+<body ng-controller="ezCtrl">
+	<div class="scroll-content padding" 
+		on-swipe-up="onSwipeUp()" 
+		on-swipe-down="onSwipeDown()"
+		on-swipe-left="onSwipeLeft()" 
+		on-swipe-right="onSwipeRight()">
+		<p class="padding">按住鼠标快速划！</p>
+		<i class="icon {{icon}}"></i>
+	</div>
+</body>
+</html>
