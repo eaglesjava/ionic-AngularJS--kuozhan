@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ezApp">
 	<head>
 		<meta charset="utf-8">
 		<title>ionic.js : 路由管理</title>
-		
-		
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+		<script src="../js/ionic.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/ionic.css">
+		<script src="1-03ionicjs-luyoumanager.js"></script>
 	</head>
-	<body>
+	<body ng-controller="ezCtrl">
+		<ion-nav-view>
+			<img src="../img/0019.png" />
+		</ion-nav-view>
+		<ion-footer-bar>
+			<div class="button-bar">
+				<a class="button" ng-click="go('state1');">state1</a>
+				<a class="button" ng-click="go('state2');">state2</a>
+				<a class="button" ng-click="go('state3');">state3</a>
+			</div>
+		</ion-footer-bar>
+		<!--子视图1：state1.html-->
+		<script id="state1.html" type="text/ng-template">
+			<p>这个内容在状态为state1时显示</p>
+			<img src="../img/0016.png">
+		</script>
+	
+		<!--子视图2：state2.html-->
+		<script id="state2.html" type="text/ng-template">
+			<p>这个内容在状态为state2时显示</p>
+			<img src="../img/0017.png">
+		</script>
+	
+		<!--子视图3：state3.html-->
+		<script id="state3.html" type="text/ng-template">
+			<p>这个内容在状态为state3时显示</p>
+			<img src="../img/0018.png">
+		</script>
 	</body>
 </html>
